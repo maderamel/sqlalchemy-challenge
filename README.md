@@ -20,9 +20,9 @@ To begin, a query was designed to find the number of stations within the dataset
 
 Another query was created to analyze the minimum, maximum, and average temperatures for that station:
 
-* The lowest temperature for the most active station is (54.0,)
-* The highest temperature for the most active station is (85.0,)
-* The average temperature for the most active station is (71.66378066378067,)* 
+* The lowest temperature for the most active station is 54.0
+* The highest temperature for the most active station is 85.0
+* The average temperature for the most active station is 71.66378066378067
 
 A query was also designed to get the previous 12 months of temperature observation data (TOBS) and filtered by station with the most number of observations. Results were saved to a Pandas DataFrame and plotted as a histogram (below).
 
@@ -32,11 +32,11 @@ A query was also designed to get the previous 12 months of temperature observati
 ## Part 2: Design Your Climate App
 
 ### API Static Routes
-1. The homepage route (/) was created with a list of all available routes.
-2. A precipitation route was created (/api/v1.0/precipitation) to convert the query results from the precipitation analysis to a dictionary and return the JSON representation of that dictionary.
-3. A station route was created (/api/v1.0/stations) to return a JSON list of stations from the dataset.
-4. A tobs route was created (/api/v1.0/tobs) to returns jsonified data for the most active station for only the last year of data.
+1. The **homepage route** (/) was created with a list of all available routes.
+2. A **precipitation route** (/api/v1.0/precipitation) was created to convert the query results from the precipitation analysis to a dictionary and return the JSON representation of that dictionary.
+3. A **station route** (/api/v1.0/stations) was created to return a JSON list of stations from the dataset.
+4. A **tobs route** (/api/v1.0/tobs) was created to returns jsonified data for the most active station for only the last year of data.
 
 ### API Dynamic Routes
-5. A start route was created (/api/v1.0/<start>) that accepts the start date as a parameter from the URL and returns the min, max, and average temperatures calculated from the given start date to the end of the dataset.
-6. A start/end route (/api/v1.0/<start>/<end>) that accepts the start and end dates as parameters from the URL  and returns the minimum, maximum, and average temperatures calculated from the given start date to the given end date. 
+5. A **start route** (/api/v1.0/<start>) was created that accepts the start date as a parameter from the URL and returns the min, max, and average temperatures calculated from the given start date to the end of the dataset.
+6. A **start/end route** (/api/v1.0/<start>/<end>) was created that accepts the start and end dates as parameters from the URL  and returns the minimum, maximum, and average temperatures calculated from the given start date to the given end date. 
